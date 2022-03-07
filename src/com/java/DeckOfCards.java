@@ -9,7 +9,7 @@ public class DeckOfCards {
 	 * 
 	 * 
 	 * 
-	 * @return: ranks to further compare.
+	 * @return: No return values.
 	 */
 
 	public static ArrayList<String> deckCards = new ArrayList<>();
