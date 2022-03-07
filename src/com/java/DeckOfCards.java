@@ -18,7 +18,9 @@ public class DeckOfCards {
 	public void wellCome() {
 		System.out.println("Welcome to the Deck of Cards DashBoard");
 	}
-
+           /* Display Deck of Cards 
+	    *
+	    */
 	public void deckOfCard() {
 		String[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
 		String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "King", "Queen", "Ace" };
@@ -39,7 +41,7 @@ public class DeckOfCards {
 		}
 		System.out.println();
 	}
-
+         // Calling wellCome and deckOfCard method  
 	public static void main(String[] args) {
 		DeckOfCards deckOfCardsGame = new DeckOfCards();
 		deckOfCardsGame.wellCome();
