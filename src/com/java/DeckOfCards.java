@@ -40,10 +40,23 @@ public class DeckOfCards {
 		System.out.println();
 	}
 
+	public void noOfPlayers() {
+		System.out.print("\nEnter number of players minimum 2 , maximum 4 : ");
+		int player = scanner.nextInt();
+		if (player >= 2 && player <= 4) {
+			System.out.println("\n" + player + " players will play the game");
+		} else {
+			System.out.println("Please enter number of players in the Range");
+			this.noOfPlayers();
+			scanner.close();
+		}
+	}
+
 	public static void main(String[] args) {
 		DeckOfCards deckOfCardsGame = new DeckOfCards();
 		deckOfCardsGame.wellCome();
 		deckOfCardsGame.deckOfCard();
+		deckOfCardsGame.noOfPlayers();
 
 	}
 }
