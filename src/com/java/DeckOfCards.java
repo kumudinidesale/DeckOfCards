@@ -59,12 +59,25 @@ public class DeckOfCards {
 		}
 	}
 
+	public void shuffleCard() {
+		System.out.println("shuffling the cards before Distribution");
+		ArrayList<String> temp = new ArrayList<String>();
+		while (!deckCards.isEmpty()) {
+			int sufCard = (int) (Math.random() * deckCards.size());
+			temp.add(deckCards.get(sufCard));
+			deckCards.remove(sufCard);
+		}
+		deckCards = temp;
+		toDisplay(deckCards);
+	}
+
 	public static void main(String[] args) {
 		DeckOfCards deckOfCardsGame = new DeckOfCards();
 		deckOfCardsGame.wellCome();
 		deckOfCardsGame.deckOfCard();
 		deckOfCardsGame.noOfPlayers();
 		deckOfCardsGame.seqOfPlayer(4);
+		deckOfCardsGame.shuffleCard();
 
 	}
 }
