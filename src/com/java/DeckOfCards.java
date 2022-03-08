@@ -52,11 +52,19 @@ public class DeckOfCards {
 		}
 	}
 
+	public void seqOfPlayer(int player) {
+		System.out.println("\nSequence of cards are below : ");
+		for (int i = 1; i <= player; i++) {
+			System.out.println("\nPlayer " + i + " Getting card.............");
+		}
+	}
+
 	public static void main(String[] args) {
 		DeckOfCards deckOfCardsGame = new DeckOfCards();
 		deckOfCardsGame.wellCome();
 		deckOfCardsGame.deckOfCard();
 		deckOfCardsGame.noOfPlayers();
+		deckOfCardsGame.seqOfPlayer(4);
 
 	}
 }
